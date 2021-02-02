@@ -1,0 +1,102 @@
+@keyframes spin {
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+:root {
+	--hdrFtrClr: rgb(148, 78, 40);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: var(--hdrFtrClr);
+	width: 100%;
+	margin: 0;
+	padding: 1em;
+	color: white;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+	align-self: center;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+.menu ul {
+	display: inline;
+	list-style-type: none;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.doggos {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	padding-top: 1em;
+	background-color: beige;
+	text-align: center;
+	height: auto;
+}
+
+.prev button,
+.next button {
+	border: 0;
+	background: var(--hdrFtrClr);
+	color: sandybrown;
+	padding: 1em;
+}
+
+.doggos .image {
+	border: 1px solid red;
+}
+.prev {
+	margin-right: 1em;
+	text-align: right;
+	align-self: center;
+	border-radius: 1em;
+}
+
+.next {
+	margin-left: 1em;
+	text-align: left;
+	align-self: center;
+}
+
+.randomButton {
+	margin-right: 1em;
+}
+
+.doggos img {
+	height: 30em;
+}
+
+footer {
+	height: 2em;
+	background-color: var(--hdrFtrClr);
+	align-self: baseline;
+}
+
+.buttonHolder {
+	background-color: beige;
+	text-align: center;
+}
+.RandoSameBreed {
+	margin: 1em;
+}
+
+.bone {
+	animation: spin 1s ease-in-out infinite;
+}
